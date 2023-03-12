@@ -42,19 +42,35 @@ body {
 
 .apresentacao__links {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-size: 24px;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
 }
 
 .apresentacao__links__link {
-    background-color: #22D4FD;
-    width: 280px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #22D4FD;
+    width: 378px;
     padding: 21.5px 0 21.5px 0;
     text-decoration: none;
     font-size: 24px;
-    color: #000000;
+    color: #F6F6F6;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-style: normal;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 8px;
+}
+
+.apresentacao__links__link:hover {
+    background-color: #272727;
 }
